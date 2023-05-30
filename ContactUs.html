@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Consistent.Pvt Ltd.</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- icon link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <link href="./images1/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style3.css" rel="stylesheet" />
+
+    <style>
+.form-popupchat {
+display: none;
+position: fixed;
+/* position: relative; */
+right: 40px;
+width: 350px;
+padding: 20px;
+float: right;
+bottom: 190px;
+z-index: 9;
+}
+                         /* nav css start */
+                         .img-fluid{
+  margin-right: 100px;
+  margin-left: 20px;
+}
+         .marglogo{
+        margin-left: 40px;
+      }
+     
+a{
+    text-decoration: none;
+    color: #1fb6ea;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdownS {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdownS .dropbtnS {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 13px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.topnav a:hover, .dropdownS:hover .dropbtn {
+  background-color: black;
+  color: red;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: red;
+  
+}
+
+.dropdownS:hover .dropdown-content {
+  display: block;
+  z-index: 9;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdownS .dropbtnS {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdownS {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdownS .dropbtnS {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .dropdownS .dropbtnS {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+}
+      .about1{
+        background-image: linear-gradient(212deg,#008bd1 1%,#e21620 100%)!important;
+margin-bottom: 60px;
+      }
+        .cent{
+            text-align: center;
+        }
+
+
+@media only screen and (min-width: 278px)and(max-width: 280px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .blu, .ligh-re, .blckes, .bl1 {
+    width: 240px;
+    height: 380px;
+    background-color: #1fb6ea;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    margin-left: 13px;
+}
+
+}
+
+@media only screen and(min-width: 520px) and (max-width: 540px) {
+  /* For mobile phones: */
+  
+  [class*="col-"] {
+    width: 50%;
+  }
+  .blu {
+    width: 240px;
+    height: 400px;
+    background-color: #1fb6ea;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    margin-left: 147px;
+}
+}
+
+@media only screen  and (min-width: 768px) and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 50%;
+  }
+  
+
+}
+@media  only screen and (min-width: 412px) and (max-width: 414px) {
+    .blu, .ligh-re, .blckes, .bl1 {
+        margin-left: 72px;
+    }
+    .blu, .ligh-re, .blckes, .bl1{
+        width: 25%;
+    }
+}
+
+@media  only screen and (min-width: 360px) and (max-width: 393px) {
+    .blu, .ligh-re, .blckes, .bl1 {
+        margin-left: 60px;
+    }
+    .blu {
+    width: 240px;
+    height: 394px;
+    background-color: #1fb6ea;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+    /* .blu {
+    width: 240px;
+    height: 380;
+    background-color: #1fb6ea;
+    margin-bottom: 30px;
+    border-radius: 3px;
+} */
+}
+
+@media  only screen and (min-width: 375px) and (max-width: 667px) {
+    .blu, .ligh-re, .blckes, .bl1 {
+        margin-left: 60px;
+        height: 380px;
+    }
+}
+@media  only screen and (min-width: 1022px) and (max-width: 1024px) {
+   
+    .blu, .ligh-re, .blckes, .bl1 {
+    background-color: #e05e57;
+    width: 294px;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    animation: mover 1s infinite alternate;
+    text-align: center;
+    margin-left: 90px;
+}
+}
+.counter{
+  color: #fff;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 60px;
+
+  margin-left: 20px;
+}
+
+.back-im{
+    /* background-image: url(../images/image.png); */
+    background-image: url(./images/image.png);
+   
+    /* background-color: #448de0; */
+    
+}
+
+        @media screen and (max-width:414) {
+         
+
+            video {
+                width: 100%;
+            }
+        }
+
+        .marb {
+            margin-bottom: 60px;
+        }
+
+        .bttn1 {
+            margin-top: 30px;
+            padding: 10px;
+            color: orange;
+            border: solid 2px orange;
+            width: 158px;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .bttn2 {
+            margin-top: 30px;
+            padding: 10px;
+            color: white;
+            border: solid 2px #21afde;
+            width: 158px;
+            margin-bottom: 50px;
+            border-radius: 7px;
+            background-color: #21afde;
+        }
+
+
+        .promises {
+
+            margin-top: 21px;
+            font-weight: 600;
+            font-size: 35px;
+            color: #E02B20 !important;
+            letter-spacing: 2px;
+            text-align: center;
+            text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
+        }
+        
+
+        .bg-mg {
+            background: url(./images/video-bg.png);
+            height: 650px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .sec-vid {
+            margin-top: 95px;
+        }
+      .para p {
+            font-size: 16px;
+            color: white;
+           
+        }
+
+        .icen {
+            text-align: center;
+
+        }
+
+        .solution {
+            color: white;
+            position: relative;
+        }
+
+        .blu {
+            width: 240px;
+            height: 500px;
+            background-color: #1fb6ea;
+            margin-bottom: 30px;
+            border-radius: 3px;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+
+        .ligh-re {
+            background-color: #e05e57;
+            width: 240px;
+            height: 500px;
+            margin-bottom: 30px;
+            border-radius: 3px;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+
+        /* 3rd box */
+        .blckes {
+            background-color: #2A3443;
+            width: 240px;
+            height: 500px;
+            margin-bottom: 30px;
+          
+            border-radius: 3px;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+
+        /* 4th box */
+        .bl1 {
+            background-color: #3644AF;
+            width: 240px;
+            height: 500px;
+            margin-bottom: 30px;
+            border-radius: 3px;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+        .btn-imgA{
+            
+        margin-top: 325px;
+        left: 0px;
+        position: absolute;
+        z-index: 1000;
+        border: 0px;
+        position:fixed;
+        top: 50%;
+        border-radius: 100%;
+        left: 1200px;
+        font-size: 50px;
+        }
+
+        #header1{
+            background-color: rgb(21, 21, 21);
+        }
+        #navbar1 ul li a{
+            float:left;
+        }
+        .alcen{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .alcen1{
+            text-align: center;
+        }
+        strong{
+            font-size: 19px;
+        }
+        .txtmar{
+            padding: 60px;
+        }
+        /* contact us css start */
+        * {box-sizing: border-box 
+    }
+.container {
+    padding: 16px;
+  }
+input[type=text], modal-body{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-top: 15px;
+}
+input[type=email], modal-body{
+    width: 100%;
+
+    margin-top: 15px;
+}
+input[type=tel], modal-body{
+    width: 100%;
+
+   margin-top: 15px;
+}
+.form-group1{
+  text-align: center;
+
+}
+.header1{
+  text-align: center;
+}
+.modal-dialog{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+        /* contact us css end */
+
+        /* profle css start */
+        .sign-up-form{
+            width: 300px;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+            background-color: #fff;
+            padding: 20px;
+            margin: 8% auto 0;
+            text-align: center;
+        }
+        .sign-up-form h1{
+            color: #1c8adb;
+            margin-bottom: 30px;
+        }
+        .input-box{
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #999;
+            outline: none;
+        }
+        button{
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .signup-btn{
+            background-color: #1c8adb;
+        }
+        .twitter-btn{
+            background-color: #21afde;
+        }
+        a{
+            text-decoration: none;
+        }
+        hr{
+            margin-top: 20px;
+            width: 80%;
+        }
+        .or{
+            background-color: #fff;
+            width: 30px;
+            margin: -19px auto 10px;
+        }
+        .form-popupchat img{
+            width: 70px;
+            margin-top: -50px;
+        }
+        .bi-pencil-square{
+            color: grey;
+        }
+        /* profile css end */
+    </style>
+</head>
+
+<body>
+  
+     <!-- ======= Header ======= -->
+     <div class="topnav" id="myTopnav">
+        <a href="index.html" class="logo me-auto"><img src="./Photoimges/plogo.png" alt="" class="img-fluid" width="90px"/></a>
+     
+      
+     <a href="index.html" >Home</a>
+      <a href="aboutus.html">About Us</a>
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Event
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Fashion.html">Fashion</a>
+          <a href="Seminar.html">Seminars.</a>
+          <a href="Exhibision.html">Exhibitions.</a>
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Wedding
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Wedding.html">Wedding</a>
+          <a href="priweding.html">Pre-Wedding</a>
+          <a href="Post Wedding.html">Post-Wedding</a>
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Functions
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Engagement.html">Engagement</a>
+          <a href="Birthday.html">Birthday</a>
+          <a href="BabyShower.html">Baby Shower</a>
+          <a href="Party.html">Party </a> 
+          <a href="Retirement.html">Retirement </a>
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Corporate
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Emp_Gathering.html">Employee Gathering</a>
+          <a href="AnnualCompany.html">Annual Company Day</a>
+          <a href="CRM.html">CRM Activity</a>
+          <a href="MarketingEvent.html">Marketing Event </a> 
+        </div>
+      </div> 
+    
+      <a href="ContactUs.html">Contact</a>
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Other Services
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="priservice.html">Print Services </a>
+          <a href="IDCards.html">ID Cards</a>
+          
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS" onclick="openForm()"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;User<i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="SignIn1.html">Sign In</a>
+          <a href="SignUp.html">Sign Up</a>
+          
+        </div>
+      </div> 
+    
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+     <!-- chat pop up form script -->
+<script>
+    function openForm() {
+      document.getElementById("myFormchat").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myFormchat").style.display = "none";
+    }
+    </script>
+      <!-- ////// -->
+      <div class="form-popupchat" id="myFormchat">
+
+      <div class="sign-up-form">
+        <img src="./Img/user.jpg" alt=""><a href="#"><i class="bi bi-pencil-square"></i></a>
+        <h1>My Profile</h1>
+        <form>
+            <input type="email" class="input-box" placeholder="Your Email">
+            <input type="Password" class="input-box" placeholder="Your Password">
+            <p><span><input type="checkbox"></span> agree to the term of services</p>
+            <button type="button" class="signup-btn">Sign-Up</button>
+            <hr>
+            <p class="or">OR</p>
+            <button type="button" class="twitter-btn">Login with gmail</button>
+            <p>Do you have an account ? <a href="#">Sign in</a></p>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+      </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <!-- End Header -->
+  <div class="container">
+    <div class="row alcen">
+    <div class="col-md-12">
+        <div class="alcen">
+            <img src="./imgphotography/con1.jpg" width="100%">       
+         </div>
+        </div>
+</div>
+  </div>
+  
+  <!-- wedding film sec end -->
+<div class="section txtmar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <strong>Let’s Rendezvous </strong> 
+                <p>So, you like our work and want to hire us? Drop us a mail or use the WhatsApp chat button to directly chat with us.</p>
+          
+                <p> <strong>Head Office:</strong> KnotsbyAMP, Office no 802 & 803, B wing, Mahavir Icon,Plot no 90, Sector 15, CBD Belapur, Navi Mumbai: 400614</p>
+           <p><strong>Email:</strong> sales@knotsbyamp.com</p>
+           <strong>Phone: +91 9987071831</strong>
+           <p><strong>Business Hours:</strong> 10:00 am to 7:00 pm</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <h3>To make an enquiry, chat with us on WhatsApp</h3>
+                <div class="alcen1">
+                    <button class="bttn1" >Whatsapp Us</button>
+
+                </div>
+
+                <div class="row">
+                    <div class="container">
+                        <div class="model" id="mymodal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="header1">
+                                        <h3 style="text-align: center;color: #21afde; margin-top: 20px; font-weight: 500;"> Contact Us </h3>
+                                    </div>
+                
+                                    <div class="modal-body">
+                                        <form action="action_page.php">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="" placeholder="*Name">
+                                            </div>
+                
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="" placeholder="*email">
+                                            </div>
+                
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" name="" placeholder="*Mobile Number">
+                                            </div>
+                
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="" placeholder="*Address">
+                                            </div>
+                
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="" placeholder="*Message">
+                                            </div>
+                
+                
+                                          
+                                            
+                                            <div class="form-group1">
+                                                <button class="bttn2" type="submit" style="margin-top: 20px;">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+   
+
+
+       
+      
+
+       
+        
+        
+
+   
+   
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?3446';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "10",
+                "marginRight": "80",
+                "marginLeft": "50",
+                "position": "right",
+                "right": "130",
+            },
+            "brandSetting": {
+                "brandName": "Kalasource",
+                "brandSubTitle": "Typically replies within a day",
+                "brandImg": "https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+                "welcomeText": "Hi, there!\nHow can I help you?",
+                "messageText": "Hello, \nI have a question about kalasource.in",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "917499106952"
+            }
+        };
+       
+    </script>
+    <!-- start footer -->
+    <footer>
+        <section class="">
+            <div class="container">
+                <div class="row">
+
+                 
+                 
+
+                </div>
+            </div>
+            <div class="border-bottom"></div>
+        </section>
+        <section class="blackbg1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                      <div class="container d-flex align-items-center" style="margin-top: 30px;">
+                        <!-- <a href="index.html" class="logo me-auto"><img src="./Photoimges/plogo.png" width="200px" alt="" class="img-fluid" /></a> -->
+                        
+                    </div>
+                        <div class="jcb-footer__info__copy">
+
+                            <a href="index.html" class="logo me-auto"><span style="margin-right: 20px;"><img src="./Photoimges/plogo.png" width="100px" alt="" class="img-fluid" /></a></span>
+
+                            Copyright 2023 © <a href="https://www.appropriatesolutions.co.in/">KnotsbyAMP
+                              </a>.
+
+
+
+
+                            <span itemscope="" itemtype="http://schema.org/LocalBusiness">
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+                                    <!-- <span itemprop="streetAddress">ITI Circle</span>&nbsp; -->
+
+
+                                    <!-- <span itemprop="addressLocality">Nashik</span>,&nbsp;     
+                                    <span itemprop="addressRegion">Maharashtra</span>
+                                    <span itemprop="addressLocality">. We are also present in Dhule, Jalgaon, Nandurbar,
+                                        yeola, Dwarka, Satana, Shirpur.</span> -->
+                                    &nbsp; <span>Support: +918888804746</span>
+                                    Developed By <a href="https://kalasource.in/">Kalasource</a> 
+
+                                  
+                                </span>
+                            </span>
+
+
+                            <br>
+                            <br>
+
+                            <!-- <a href="/sitemap/">Sitemap</a> <span>|</span> -->
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jcb-footer__info__social">
+
+
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                <!-- <i class="fa fa-youtube" aria-hidden="true"></i> -->
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                <!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
+                                <i class="bi bi-twitter"></i>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

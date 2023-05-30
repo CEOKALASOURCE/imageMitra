@@ -1,0 +1,39 @@
+
+
+.card{
+    display: grid;
+    grid-template-columns: 440px;
+    grid-template-rows: 110px 110px 40px;
+    grid-template-areas: "image" "text" "stats";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   margin-top: 50px;
+}
+
+.txtcen
+{
+    text-align: center;
+}
+.card-text{
+    margin-top: 20px;
+}
+.btn_R{
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: orangered;
+    border: none;
+}
+.mtb{
+    margin-bottom: 70px;
+}

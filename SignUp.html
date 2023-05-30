@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN In FORM </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="SignUp.css">
+
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+      * {box-sizing: border-box 
+    }
+.container {
+    padding: 16px;
+  }
+input[type=text], modal-body{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.form-group1{
+  text-align: center;
+
+}
+.header1{
+  text-align: center;
+}
+.modal-dialog{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+  </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="model" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="header1">
+                        <h3 style="text-align: center;color: #007bff;"> Sign Up </h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="action_page.php">
+                            
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="" placeholder="*email">
+                            </div>
+
+
+                            <div class="form-group">
+                            <input type="password" class="form-control" name="" placeholder="*enter password">
+                            </div>
+
+                            
+                            <div class="form-group1">
+                                <button class="btn-primary btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- icon link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <link href="./images1/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style3.css" rel="stylesheet" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar</title>
+    <link href="card.css" rel="stylesheet" type="text/css">
+    <style>
+              @media only screen and (min-width: 768px) and (max-width: 1024px){
+    [class*="col-"] {
+        width: 100%;
+    }
+    }
+         
+            /* nav css start */
+                 .img-fluid{
+  margin-right: 100px;
+  margin-left: 20px;
+}
+         .marglogo{
+        margin-left: 40px;
+      }
+     
+a{
+    text-decoration: none;
+    color: white
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdownS {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdownS .dropbtnS {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 13px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.topnav a:hover, .dropdownS:hover .dropbtn {
+  background-color: black;
+  color: red;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: red;
+  
+}
+
+.dropdownS:hover .dropdown-content {
+  display: block;
+  z-index: 9;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdownS .dropbtnS {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdownS {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdownS .dropbtnS {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .dropdownS .dropbtnS {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+}
+
+    </style>
+</head>
+
+<body>
+
+
+      <!-- ======= Header ======= -->
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="logo me-auto"><img src="./Photoimges/plogo.png" alt="" class="img-fluid" width="90px"/></a>
+     
+      
+     <a href="index.html" >Home</a>
+      <a href="aboutus.html">About Us</a>
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Event
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Fashion.html">Fashion</a>
+          <a href="Seminar.html">Seminars.</a>
+          <a href="Exhibision.html">Exhibitions.</a>
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Wedding
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Wedding.html">Wedding</a>
+          <a href="priweding.html">Pre-Wedding</a>
+          <a href="Post Wedding.html">Post-Wedding</a>
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Functions
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Engagement.html">Engagement</a>
+          <a href="Birthday.html">Birthday</a>
+          <a href="BabyShower.html">Baby Shower</a>
+          <a href="Party.html">Party </a> 
+          <a href="Retirement.html">Retirement </a>
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Corporate
+          <i class="bi bi-chevron-down"></i>    </button>
+        <div class="dropdown-content">
+          <a href="Emp_Gathering.html">Employee Gathering</a>
+          <a href="AnnualCompany.html">Annual Company Day</a>
+          <a href="CRM.html">CRM Activity</a>
+          <a href="MarketingEvent.html">Marketing Event </a> 
+        </div>
+      </div> 
+    
+      <a href="ContactUs.html">Contact</a>
+    
+      <div class="dropdownS">
+        <button class="dropbtnS">Other Services
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="priservice.html">Print Services </a>
+          <a href="IDCards.html">ID Cards</a>
+          
+        </div>
+      </div> 
+    
+      <div class="dropdownS">
+        <button class="dropbtnS"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;User<i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="SignIn1.html">Sign In</a>
+          <a href="SignUp.html">Sign Up</a>
+          
+        </div>
+      </div> 
+    
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <!-- End Header -->
+    <div class="container mtb">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="txtcen">
+                            <h1 style="font-size: 32px; color: #666; font-weight: 600;margin-top: 50px;">Seminar</h1>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-6">
+        
+                                        <img src="./img/Colourful-Telugu-wedding-in-Hyderabad-3-of-3-980x652 (1).jpg"
+                                            width="100%" height="299px">
+                                        <!-- <div class="card-img1">
+                         </div> -->
+                                    </div>
+        
+                                    <div class="col-md-6">
+                                        <div class="card-text">
+                                            <h2>Indo-Dutch telugu wedding in Hyderabad</h2>
+                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sequi magnam
+                                              dolor!
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sequi magnam
+                                              dolor!
+                                                <!-- <p>Varun & Sannes telugu wedding celebrations wear spread acreoss 3days in varios locations all over hyderabad. south indian weddings always tend to give are filled with color. gorgeous bridal wear,and...</p> -->
+                                            </p>
+                                            <button class="btn_R"><a href="readmore.html">Read more</a></button>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <!-- // -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="txtcen">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-6">
+        
+                                        <img src="./img/Wedding-taj.jpg"
+                                            width="100%" height="299px">
+                                        <!-- <div class="card-img1">
+                         </div> -->
+                                    </div>
+        
+                                    <div class="col-md-6">
+                                        <div class="card-text">
+                                            <h2>Gujrati Wedding at Taj Lands End, Mumbai</h2>
+                                            <p> Sanjana & Rahul met through their families but soon they realised that it was
+                                               umbai. We have covered several weddings before at Taj Lands End, Mumbai Read
+                                                Vishesh-Dhvani,..
+                                                <!-- <p>Varun & Sannes telugu wedding celebrations wear spread acreoss 3days in varios locations all over hyderabad. south indian weddings always tend to give are filled with color. gorgeous bridal wear,and...</p> -->
+                                            </p>
+                                            <button class="btn_R"><a href="readmore.html">Read more</a></button>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+
+                </div>
+              
+            </div>
+        </div>
+        <!-- .. -->
+
+          <!-- // -->
+          <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="txtcen">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-6">
+        
+                                        <img src="./img/Brihad-Makita-C.jpg"
+                                            width="100%" height="299px">
+                                        <!-- <div class="card-img1">
+                         </div> -->
+                                    </div>
+        
+                                    <div class="col-md-6">
+                                        <div class="card-text">
+                                            <h2>Gujrati Wedding at Taj Lands End, Mumbai</h2>
+                                            <p> Sanjana & Rahul met through their families but soon they realised that it was
+                                               umbai. We have covered several weddings before at Taj Lands End, Mumbai Read
+                                                Vishesh-Dhvani,..
+                                                <!-- <p>Varun & Sannes telugu wedding celebrations wear spread acreoss 3days in varios locations all over hyderabad. south indian weddings always tend to give are filled with color. gorgeous bridal wear,and...</p> -->
+                                            </p>
+                                            <button class="btn_R"><a href="readmore.html">Read more</a></button>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+
+                </div>
+              
+            </div>
+        </div>
+        <!-- .. -->
+
+    
+ <!-- // -->
+ <div class="row mt-4">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="txtcen">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <img src="./img/North-(2).jpg"
+                                    width="100%" height="299px">
+                                <!-- <div class="card-img1">
+                 </div> -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-text">
+                                    <h2>Gujrati Wedding at Taj Lands End, Mumbai</h2>
+                                    <p> Sanjana & Rahul met through their families but soon they realised that it was
+                                       umbai. We have covered several weddings before at Taj Lands End, Mumbai Read
+                                        Vishesh-Dhvani,..
+                                        <!-- <p>Varun & Sannes telugu wedding celebrations wear spread acreoss 3days in varios locations all over hyderabad. south indian weddings always tend to give are filled with color. gorgeous bridal wear,and...</p> -->
+                                    </p>
+                                    <button class="btn_R"><a href="readmore.html">Read more</a></button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+      
+    </div>
+</div>
+<!-- .. -->
+
+       
+
+      
+        
+    </div>
+
+     <!-- start footer -->
+     <footer>
+        <section class="">
+            <div class="container">
+                <div class="row">
+
+                 
+                 
+
+                </div>
+            </div>
+            <div class="border-bottom"></div>
+        </section>
+        <section class="blackbg1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                      <div class="container d-flex align-items-center" style="margin-top: 30px;">
+                        <!-- <a href="index.html" class="logo me-auto"><img src="./Photoimges/plogo.png" width="200px" alt="" class="img-fluid" /></a> -->
+                        
+                    </div>
+                        <div class="jcb-footer__info__copy">
+
+                            <a href="index.html" class="logo me-auto"><span style="margin-right: 20px;"><img src="./Photoimges/plogo.png" width="100px" alt="" class="img-fluid" /></a></span>
+
+                            Copyright 2023 © <a href="https://www.appropriatesolutions.co.in/"><span style="color: #1fb6ea;">KnotsbyAMP</span>
+                            </a>.
+
+
+
+
+                            <span itemscope="" itemtype="http://schema.org/LocalBusiness">
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+                                    <!-- <span itemprop="streetAddress">ITI Circle</span>&nbsp; -->
+
+
+                                    <!-- <span itemprop="addressLocality">Nashik</span>,&nbsp;     
+                                    <span itemprop="addressRegion">Maharashtra</span>
+                                    <span itemprop="addressLocality">. We are also present in Dhule, Jalgaon, Nandurbar,
+                                        yeola, Dwarka, Satana, Shirpur.</span> -->
+                                    &nbsp; <span>Support: +918888804746</span>
+                                    Developed By <a href="https://kalasource.in/"><span style="color: #1fb6ea;">Kalasource</a> </span>
+
+                                  
+                                </span>
+                            </span>
+
+
+                            <br>
+                            <br>
+
+                            <!-- <a href="/sitemap/">Sitemap</a> <span>|</span> -->
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jcb-footer__info__social">
+
+
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                <!-- <i class="fa fa-youtube" aria-hidden="true"></i> -->
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                <!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
+                                <i class="bi bi-twitter"></i>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>
